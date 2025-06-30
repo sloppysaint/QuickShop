@@ -16,7 +16,7 @@ A simple, modern e-commerce cart built with React, Node.js, MongoDB, and Stripe.
 
 ## Tech Stack
 
-- **Frontend:** React, React Router, Axios
+- **Frontend:** React Vite, React Router, Axios
 - **Backend:** Node.js, Express
 - **Database:** MongoDB + Mongoose
 - **Payments:** Stripe API
@@ -33,7 +33,7 @@ git clone https://github.com/sloppysaint/QuickShop.git
 cd QuickShop
 cd server && npm install
 cd ../client && npm install
-
+```
 ### 2. Environment Variables
 
 Create a `server/.env` file with the following content:
@@ -44,7 +44,7 @@ STRIPE_PUBLISHABLE_KEY=pk_test_yourStripePublishableKey
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_gmail_app_password
 MONGODB_URI=your_uri
-
+```
 ---
 
 ## 3. Run the App
@@ -53,9 +53,10 @@ MONGODB_URI=your_uri
 
 ```bash
 cd server
-npm run dev
-
+node index.js
+```
 ### Frontend
 ```bash
 cd ../client
-npm start
+npm run dev
+```
